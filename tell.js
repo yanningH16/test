@@ -18,7 +18,7 @@ app.use(history({
 app.use(express.static('./dist'))
 // var port = process.env.PORT || config.build.port
 // 生产环境的端口号
-var port = 8050
+var port = 8014
 module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)
