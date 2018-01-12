@@ -1,5 +1,5 @@
 var express = require('express')
-var proxy = require('http-proxy-middleware')
+// var proxy = require('http-proxy-middleware')
 var history = require('connect-history-api-fallback')
 // var config = require('./config/index')
 var compression = require('compression')
@@ -18,7 +18,7 @@ app.use(history({
 app.use(express.static('./dist'))
 // var port = process.env.PORT || config.build.port
 // 生产环境的端口号
-var port = 8014
+var port = 8016
 module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)
