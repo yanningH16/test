@@ -13,7 +13,7 @@
 
 <script>
 import Lottie from './lottie.vue'
-import * as animationData from '../../assets/logo.json'
+import * as animationData from '../../assets/car.json'
 export default {
   name: 'app',
   components: {
