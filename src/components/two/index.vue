@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bottom">
-    <lottie :options="defaultOptions" :height="50" :width="50" :animCreated="handleAnimation" />
+    <lottie :options="defaultOptions" :height="800" :width="800" :animCreated="handleAnimation" />
     <div>
       <p>Speed: x{{animationSpeed}}</p>
       <input type="range" value="1" min="0" max="3" step="0.5" v-on:change="onSpeedChange" v-model="animationSpeed">
@@ -13,7 +13,7 @@
 
 <script>
 import Lottie from './lottie.vue'
-import * as animationData from '../../assets/car.json'
+import * as animationData from '../../assets/lottie_logo_1.json'
 export default {
   name: 'app',
   components: {
